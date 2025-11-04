@@ -7,14 +7,14 @@ on:
 
 jobs:
    CI:
-    runs-on: [self-hosted, windows, x64]
+    runs-on: windows-latest
     steps:
       - run: echo "Obter o código"
       - run: echo "Executar o Docker Build"
       - run: echo "Enviar a Imagem Docker para o Docker"
 
    CD:
-    runs-on: [self-hosted, windows, x64]
+    runs-on: windows-latest
     steps:
       - run: echo "Obter o código"
       - run: echo "Configurar o KubeConfig"
